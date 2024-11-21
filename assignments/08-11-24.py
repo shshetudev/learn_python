@@ -47,10 +47,28 @@ print(x, y)
 
 x = "awesome"
 
+# function declaration
+# void: Not returning anything, just printng something
 def myfunc():
   print("Python is " + x)
 
+# function invocation
 myfunc()
+
+# Function with integer return type
+def myIntNum():
+  x = 10
+  y = 20
+  return x+y
+print("The result is: ", myIntNum()) 
+
+
+# Function with String return type
+def myStringfunc()->str:
+  name = "Shabab"
+  country = "BD"
+  return name + " is from " + country
+print(myStringfunc())
 
 x = "awesome"
 
@@ -67,7 +85,7 @@ print(type(x))
 
 x = 1 
 y = 2.8
-z = 1j
+z = 1j #a + ib = sqrt(-1) = i, sqrt(-2) = 0 + sqrt(2)i => 1 + 2i => i,j,k
 
 print(type(x))
 print(type(y))
