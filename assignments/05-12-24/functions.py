@@ -59,11 +59,14 @@ my_function()  # Uses default value "Norway"
 
 # Passing a List as an Argument
 # You can pass any data type to a function (e.g., lists, numbers, strings).
+print("Printing my_funciton():")
 def my_function(food):
   for x in food:
     print(x)
 
-fruits = ["apple", "banana", "cherry"]
+# fruits = ["apple", "banana", "cherry"]
+fruits = "apple"
+# fruits = {"furit1": "apple", "f2": "banana", "f3":"cherry"}
 my_function(fruits)
 
 # Return Values
@@ -80,6 +83,7 @@ def my_function():
 
 # Positional-Only Arguments
 # Add / to specify that arguments before it are positional-only.
+print("Positional-Only Arguments:")
 def my_function(x, /):
   print(x)
 
@@ -87,6 +91,7 @@ my_function(3)  # Correct
 
 # Keyword-Only Arguments
 # Add * to specify that arguments after it are keyword-only.
+print("Keyword-Only Arguments:")
 def my_function(*, x):
   print(x)
 
@@ -101,8 +106,16 @@ my_function(5, 6, c = 7, d = 8)
 
 # Recursion
 # A function can call itself, which is known as recursion. It’s used to solve problems where the solution depends on solving smaller instances of the same problem.
+print("Recursion:") #nested way: add(1, add(1, add(1, add(1,2))))
 def tri_recursion(k):
   if k > 0:
+    # Explanation: Recursion -> Stack memory: LIFO, Iteration[for/while/do..while] -> Heap memory: FIFO
+    # 1st Iter: tri_recursion(6): 6 + tri_recursion(5) -> tri_recursion(6): 6 + 15 = 21
+    # 2nd Iter: tri_recursion(5): 5 + tri_recursion(4) -> tri_recursion(5): 5 + 10 = 15
+    # 3rd Iter: tri_recursion(4): 4 + tri_recursion(3) -> tri_recursion(4): 4 + 6 = 10
+    # 4th Iter: tri_recursion(3): 3 + tri_recursion(2) -> tri_recursion(3): 3 + 3 = 6
+    # 5th Iter: tri_recursion(2): 2 + tri_recursion(1) -> tri_recursion(2): 2 + 1 = 3
+    # 6th Iter: tri_recursion(1): 1 + tri_recursion(0) [END] -> tri_recursion(1): 1
     result = k + tri_recursion(k - 1)
     print(result)
   else:
@@ -110,3 +123,10 @@ def tri_recursion(k):
   return result
 
 tri_recursion(6)
+
+
+def add(a, b):
+  return a + b
+
+sum = add(1, add(1, add(1, add(1,2)))) 
+print(sum) 
