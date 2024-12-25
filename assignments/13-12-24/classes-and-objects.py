@@ -28,12 +28,14 @@ print(p1.age)   # Output: 36
 
 # Without __str__() function
 class Person:
-    def __init__(self, name, age):
-        self.name = name
+    def __init__(self, name, age): # Constructor -> For python: init function
+        self.name = name # this.name = name
         self.age = age
 
 p1 = Person("John", 36)
-print(p1)  # Output: <__main__.Person object at 0x7f8d3d4e0f10> (default string representation)
+shabab = Person("Shabab", 12)
+print("Name:", shabab.name, "Age:", shabab.age)
+print(p1)  # Output: <__main__.Person object at 0x7f8d3d4e0f10> (default string representation) -> Memory address
 
 # With __str__() function
 class Person:
@@ -41,7 +43,7 @@ class Person:
         self.name = name
         self.age = age
 
-    def __str__(self):
+    def __str__(self): # toString method in Java
         return f"{self.name}({self.age})"  # Custom string representation
 
 p1 = Person("John", 36)
