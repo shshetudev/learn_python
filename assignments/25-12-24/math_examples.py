@@ -16,7 +16,7 @@ print(x)  # Output: 7.25
 
 # The pow(x, y) function returns the value of x raised to the power of y (x^y):
 # Example
-x = pow(4, 3)  # 4 raised to the power of 3, i.e., 4 * 4 * 4 = 64
+x = pow(4, 3)  # 4 raised to the power of 3, i.e., 4 * 4 * 4 = 64, 4^3 = 64
 
 print(x)  # Output: 64
 
@@ -37,9 +37,13 @@ print(x)  # Output: 8.0 (Square root of 64)
 # Example
 x = math.ceil(1.4)  # Rounds 1.4 upwards to 2
 y = math.floor(1.4)  # Rounds 1.4 downwards to 1
+z1 = round(1.4)
+z2 = round(1.5)
 
 print(x)  # Output: 2
 print(y)  # Output: 1
+print(z1)
+print(z2)
 
 # The math.pi constant returns the value of pi (π), which is approximately 3.14159:
 # Example
