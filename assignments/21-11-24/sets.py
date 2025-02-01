@@ -10,6 +10,7 @@ print(thisset)
 # same applies for false, and 0
 thisset = {"apple", "banana", "cherry", False, True, 0}
 print(thisset)
+
 # you could find the length of a set by doing these lines of code
 thisset = {"apple", "banana", "cherry"}
 print(len(thisset))
