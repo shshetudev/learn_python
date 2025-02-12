@@ -38,7 +38,7 @@ cars.append("Honda")  # Now the cars list will be ["Toyota", "Volvo", "BMW", "Ho
 cars.pop(1)  # Removes the element at index 1 ("Volvo")
 
 # Use the remove() method to remove an element by value
-cars.remove("Volvo")  # Removes the first occurrence of "Volvo"
+# cars.remove("Volvo")  # Removes the first occurrence of "Volvo"
 
 # Array Methods
 # Python provides several built-in methods for working with lists (arrays)
