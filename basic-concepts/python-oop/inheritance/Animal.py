@@ -16,8 +16,8 @@ class Dog(Animal):
         self.breed = breed
 
 
-def display(self):
-    self.public_method()
+    def display(self):
+        self.public_method()
 
 
 # Creating an instance of Dog
