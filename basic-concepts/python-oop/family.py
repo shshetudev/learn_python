@@ -9,28 +9,30 @@ class Grandfather:
         print(f"The family member's name is {self.__name}")
         self.__private_method()
 
-Grandfather = Grandfather("Ashraf", "5'7")
-Grandfather.display()
+    def display(self):
+        self.public_method()
+
+grandfather = Grandfather("Ashraf")
+grandfather.display()
 
 class Father(Grandfather):
     def __init__(self, name, hair):
         super().__init__(name)
         self.hair = hair
 
+    def display(self):
+        self.public_method()
 
-def display(self):
-    self.public_method()
-
-
-Father = Father("Abul", "5'6", "Black")
-Father.display()
+father = Father("Abul", "Black")
+father.display()
 
 class Shabab(Father):
-    def __init__(self, name, eyes):
-        super().__init__(name)
+    def __init__(self, name, hair, eyes):
+        super().__init__(name, hair)
         self.eyes = eyes
 
+    def display(self):
+        self.public_method()
 
-
-Shabab = Shabab("Shabab", "5'6", "Black")
-Shabab.display()
+shabab = Shabab("Shabab", "Black", "Brown")
+shabab.display()
