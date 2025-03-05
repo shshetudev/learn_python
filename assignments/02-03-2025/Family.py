@@ -1,38 +1,41 @@
 class Grandfather:
     def __init__(self, name):
-        self.__name = name
+        self.name = name
 
     def __private_method(self):
         print("This is a private method.")
 
-    def public_method(self):
-        print(f"The family member's name is {self.__name}")
-        self.__private_method()
-
-    def display(self):
-        self.public_method()
+    def swim(self):
+        print(f"{self.name} swims very fast")
 
 grandfather = Grandfather("Ashraf")
-grandfather.display()
+grandfather.swim()
 
 class Father(Grandfather):
     def __init__(self, name, hair):
         super().__init__(name)
         self.hair = hair
 
-    def display(self):
-        self.public_method()
+    def run(self):
+        print(f"{self.name} runs very fast")
 
 father = Father("Abul", "Black")
-father.display()
+father.swim()
+father.run()
 
-class Shabab(Father):
+class Children(Father):
     def __init__(self, name, hair, eyes):
         super().__init__(name, hair)
         self.eyes = eyes
 
-    def display(self):
-        self.public_method()
+    def cycle(self):
+        print(f"{self.name} cycles very fast")
 
-shabab = Shabab("Shabab", "Black", "Brown")
-shabab.display()
+class NextGenChildren(Children):
+    def __init__(self, name, hair, eyes):
+        super().__init__(name, hair, eyes)
+
+shababJr = NextGenChildren("ShababJR", "Brown", "Blue")
+shababJr.swim()
+shababJr.run()
+shababJr.cycle()
