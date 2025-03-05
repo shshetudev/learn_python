@@ -7,4 +7,5 @@
 | 25-12-2024 | Polymorphism - Math                                                                      | Polymorphism, Scope, Modules, Dates, Math                              | DONE   |
 | 13-01-2025 | GeeksForGeek link on OOP                                                                 | DONE                                                                   | 
 | 09-02-2025 | Apply OOP with `Bird` class in separate files: [prop: `color`, `type`, func: `fly`]      | OOP                                                                    | DONE   |
-| 27-02-2025 | Create inheritance example using the picture i shared in `python-oop/inheritance` folder | OOP Inheritance                                                        | TODO   |
+| 02-03-2025 | Create inheritance example using the picture i shared in `python-oop/inheritance` folder | OOP Inheritance                                                        | DONE   |
+| 05-03-2025 | Write down polymorphism from W3schools                                                   | Python Polymorphism                                                    | TODO   |
