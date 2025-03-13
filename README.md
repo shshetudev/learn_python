@@ -1,11 +1,12 @@
-| Date       | Class topic                                                                              | Assignment                                                             | Status |
-|------------|------------------------------------------------------------------------------------------|------------------------------------------------------------------------|--------|
-| 08-11-2024 | Intro(W3)                                                                                | Python variables, Python Data types, Python Numbers, Python Casting    | DONE   |
-| 21-11-2024 | data-type(W3)                                                                            | Python Strings, Booleans, Operators, Lists, Tuples, Sets, Dictionaries | DONE   |
-| 05-12-2024 | set, tuples, dict                                                                        | If..Else, While loops, For loops, Functions                            | DONE   |
-| 13-12-2024 | Lambda - Iterators                                                                       | Lambda, Arrays, Classes/Objects, Inheritence, Iterators                | DONE   |
-| 25-12-2024 | Polymorphism - Math                                                                      | Polymorphism, Scope, Modules, Dates, Math                              | DONE   |
-| 13-01-2025 | GeeksForGeek link on OOP                                                                 | DONE                                                                   | DONE   
-| 09-02-2025 | Apply OOP with `Bird` class in separate files: [prop: `color`, `type`, func: `fly`]      | OOP                                                                    | DONE   |
-| 02-03-2025 | Create inheritance example using the picture i shared in `python-oop/inheritance` folder | OOP Inheritance                                                        | DONE   |
-| 06-03-2025 | Write down a polymorphism example for Bird [5 birds, fly(), eat()]                       | Python Polymorphism assignment                                         | TODO   |
+| Date       | Class topic                                                                                            | Assignment                                                             | Status |
+|------------|--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|--------|
+| 08-11-2024 | Intro(W3)                                                                                              | Python variables, Python Data types, Python Numbers, Python Casting    | DONE   |
+| 21-11-2024 | data-type(W3)                                                                                          | Python Strings, Booleans, Operators, Lists, Tuples, Sets, Dictionaries | DONE   |
+| 05-12-2024 | set, tuples, dict                                                                                      | If..Else, While loops, For loops, Functions                            | DONE   |
+| 13-12-2024 | Lambda - Iterators                                                                                     | Lambda, Arrays, Classes/Objects, Inheritence, Iterators                | DONE   |
+| 25-12-2024 | Polymorphism - Math                                                                                    | Polymorphism, Scope, Modules, Dates, Math                              | DONE   |
+| 13-01-2025 | GeeksForGeek link on OOP                                                                               | DONE                                                                   | DONE   |
+| 09-02-2025 | Apply OOP with `Bird` class in separate files: [prop: `color`, `type`, func: `fly`]                    | OOP                                                                    | DONE   |
+| 02-03-2025 | Create inheritance example using the picture i shared in `python-oop/inheritance` folder               | OOP Inheritance                                                        | DONE   |
+| 06-03-2025 | Write down a polymorphism example for Bird [5 birds, fly(), eat()]                                     | Python Polymorphism assignment                                         | TODO   |
+| 13-03-2025 | Write down an abstraction example for AeroPlane[see screenshot: basic concepts/python-oop/abstraction] | Python Abstraction assignment                                          | TODO   |
