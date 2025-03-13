@@ -40,15 +40,15 @@ class Magpie(Bird):
 
 bird = Bird()
 bird.fly()
-bird.fly()
+bird.eat()
 
 crow = Crow()
 crow.fly()
-crow.fly()
+crow.eat()
 
 parrot = Parrot()
 parrot.fly()
-parrot.fly()
+parrot.eat()
 
 robin = Robin()
 robin.fly()
