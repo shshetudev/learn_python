@@ -1,0 +1,50 @@
+Python Encapsulation Assignment: Library Management System
+Overview
+Create a Library management system that demonstrates encapsulation by properly hiding data and providing controlled access to attributes.
+
+
+Requirements
+1. Create a Book class with the following private attributes:
+__title (string)
+__author (string)
+__isbn (string)
+__available (boolean)
+__borrower (string, default None)
+
+2. Create a Library class with:
+__books (private list of Book objects)
+__name (private string)
+__max_borrow_limit (private integer)
+__members (private dictionary with member name as key and list of borrowed books as value)
+
+3. Implement appropriate getters and setters for both classes:
+- Book title, author, ISBN should be read-only after creation
+- Book availability and borrower must have controlled access
+- Library name should be read-only
+- Library's max borrow limit should have validation (not less than 1)
+
+4. Include these methods in the Library class:
+- add_book(Book): Adds a book to the library
+- remove_book(isbn): Removes a book from the library
+- search_book(title or author or isbn): Returns matching books
+- register_member(name): Adds a member to the library
+- borrow_book(member_name, isbn): Updates book availability and member's borrowed list
+- return_book(member_name, isbn): Processes a book return
+
+5. All methods should include:
+- Proper validation
+- Error messages for invalid operations
+- Success messages for completed operations
+
+6. Example Implementation Guide
+- Use data hiding with double underscores
+- Implement property decorators for controlled attribute access
+- Apply proper validation in setters
+- Create methods that only allow operations following library rules
+
+Deliverable
+- A Python file containing both classes and a demonstration script showing all functionality.
+
+
+- Bonus Challenge
+Add a LibraryStats class that can access the Library's private data only through the public interface.
