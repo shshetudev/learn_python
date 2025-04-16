@@ -1,0 +1,30 @@
+Assignment:
+
+Python Type Conversion Assignment: Data Transformation Challenge
+Scenario
+You're working as a data analyst for a research company. You've received raw data from various sources in different formats that need to be normalized and processed for analysis.
+
+
+Task
+Create a data processing system that can handle various input formats and convert them to standardized formats for analysis.
+
+
+Requirements:
+Input Parser Module:
+Create functions that can detect and convert string inputs to their appropriate Python data types
+Handle inputs like "42" (int), "3.14" (float), "True" (bool), "[1,2,3]" (list), etc.
+
+CSV Data Processor:
+Read a CSV file containing mixed data types (provided as strings)
+Convert columns to appropriate types (dates, numbers, categories)
+Calculate statistics based on the converted data
+
+User Configuration Parser:
+Parse a configuration text where values need type conversion
+Example: "max_retry=5", "threshold=0.75", "debug=True"
+Store in a dictionary with properly typed values
+
+Data Transformation Pipeline:
+Create a function that takes a collection of mixed data
+Apply a sequence of type conversions based on a transformation ruleset
+Handle conversion errors gracefully
