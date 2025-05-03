@@ -12,4 +12,5 @@
 | 13-03-2025 | Write down an abstraction example for AeroPlane[see screenshot: basic concepts/python-oop/abstraction] | Python Abstraction assignment                                          | DONE   |
 | 23-03-2025 | Complete the assignment of `assignments/march-2025/encapsulation/requirement.txt`                      | Python Encapsulation assignment                                        | DONE   |
 | 23-04-2025 | https://www.geeksforgeeks.org/python-arrays/                                                           | Data structure and algorithm assignment                                | DONE   |
-| 30-04-2025 | https://www.geeksforgeeks.org/find-second-largest-element-array/                                       | Find the second largest element (GFG)                                  | TODO   |
+| 30-04-2025 | https://www.geeksforgeeks.org/find-second-largest-element-array/                                       | Find the second largest element (GFG)                                  | DONE   |
+| 30-04-2025 | https://www.geeksforgeeks.org/practice-questions-time-complexity-analysis/                             | Time complexity assignment (GFG)                                       | TODO   |
