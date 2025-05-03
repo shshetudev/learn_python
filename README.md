@@ -13,4 +13,4 @@
 | 23-03-2025 | Complete the assignment of `assignments/march-2025/encapsulation/requirement.txt`                      | Python Encapsulation assignment                                        | DONE   |
 | 23-04-2025 | https://www.geeksforgeeks.org/python-arrays/                                                           | Data structure and algorithm assignment                                | DONE   |
 | 30-04-2025 | https://www.geeksforgeeks.org/find-second-largest-element-array/                                       | Find the second largest element (GFG)                                  | DONE   |
-| 30-04-2025 | https://www.geeksforgeeks.org/practice-questions-time-complexity-analysis/                             | Time complexity assignment (GFG)                                       | TODO   |
+| 03-05-2025 | https://www.geeksforgeeks.org/practice-questions-time-complexity-analysis/                             | Time complexity assignment (GFG)                                       | TODO   |
