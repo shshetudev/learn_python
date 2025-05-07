@@ -24,7 +24,7 @@ if __name__ == "__main__":
     # arr = [10, 10, 10]
     # arr = [-1, -5, -7]
     # arr = [0, 0, 0]
-    arr = [10, 5, 10]
+    arr = [0, 0.5, 1/0]
     print(find_second_largest_element(arr))
 
 
