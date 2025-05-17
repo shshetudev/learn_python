@@ -1,10 +1,53 @@
 # Question 1: What is the time complexity of the following code?
+# n = 10
 def function(n):
     i = 1
     s = 1
+
+    # 1 < 10 => True
+    # 2 < 10 => True
+    # 4 < 10 => True
+    # 7 < 10 => True
+    # 11 < 10 => False: LOOP EXITS
     while (s < n):
+        # s = 1 + 1 = 2
+        # s = 2 + 2 = 4
+        # s = 4 + 3 = 7
+        # s = 7 + 4 = 11
         s = s + i
+
+        # i = 1 + 1 = 2
+        # i = 2 + 1 = 3
+        # i = 3 + 1 = 4
+        # i = 4 + 1 = 5
         i += 1
+
+
+############ MATHEMATICAL EXPLANATION STARTS ############
+'''
+    Natural number: 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + ...... + 100 = ?
+    
+    [ Not using formula: N(N+1)/2]: 
+    
+    [ Using this formula: N(N+1)/2]: 
+        N=100
+        N+1=101
+        N(N+1)/2 = 50x101 = 5050
+    
+
+    When S>=n , then loop will stop at kth iterations,
+    ⇒ S>=n ⇒ S=n
+    ⇒ 2 + 2 + 3 + 4 + ……+ k = n
+    => 1 + (1+1) + (1+1+1) + (1+1+1+1) + … + (1+1+1+1+1) + k = n
+    => 1 + 1+ 2 + 3 + 4 + ...... + k = n [ Formula for the sum of the first N natural numbers = N(N+1)/2]
+    ⇒ 1 + (k * (k + 1))/2  = n
+    ⇒  1 + (k^2+k)/2 = n 
+    => (k^2)/2 = n
+    => k^2 = n
+    => k = √n
+    Hence, the time complexity is O(√n).
+'''
+############ MATHEMATICAL EXPLANATION ENDS ##############
 
 # Answer: Time complexity = O(√n).
 # Explanation:
