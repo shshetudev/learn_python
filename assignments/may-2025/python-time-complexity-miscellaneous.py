@@ -69,12 +69,24 @@ def fun(n):
 # But if n >= 5, the for loop runs, making the time complexity O(n).
 
 # Question 3: What is the time complexity of the following code?
+
+# a = 10, b = 5
+# a = 10, b = 1
+# a = 1, b = 10
 def fun(a, b):
+    # a = 10, b = 5
+
+    # (10 != 5) => True
+    # (5 != 5) => False
     while (a != b):
+        # (10 > 5) => True
         if (a > b):
-            a = a - b
+            # a = 10 - 5 = 5
+            a = a - b # 9 -> 8 -> 7 -> 6 -> 5 -> 4 -> 3 -> 2 -> 1
         else:
-            b = b - a
+            b = b - a # 9 -> 8 -> 7 -> 6 -> 5 -> 4 -> 3 -> 2 -> 1
+
+# O(n) => O(max(a, b))
 
 # Answer: Time complexity = O(1) in best case and O(max(a, b)) worst case.
 # Explanation:
@@ -82,20 +94,74 @@ def fun(a, b):
 # Otherwise, the while loop reduces the larger value step by step. In the worst case, the time complexity is O(max(a, b)).
 
 # Question 4: What is the time complexity of the following code?
+# n = 16
+# n = 9
+# n = 10
 def fun(n):
     i = 0
+
+    # 0 < 10 => True
+    # 1 < 10 => True
+    # 2*2 < 10 => True
+    # 3*3 < 10 => True
+    # 4*4 < 10 => False: LOOP EXITS
     while i * i < n:
         print("GeeksforGeeks")
+
+        # i = 0 + 1 = 1
+        # i = 1 + 1 = 2
+        # i = 2 + 1 = 3
+        # i = 3 + 1 = 4
         i += 1
+
+        # (n=16, i=4) square root of 16 = 4 => (i*i = n)
+        # (n=9, i=3) square root of 9 = 3 => (i*i = n)
+        # n=10, i= sqrt(10) = 3.16 => 3
+
+        # i = sqrt(n)
+        # O(n) = O(i) = O(sqrt(n))
 
 # Answer: Time complexity = O(√n).
 # Explanation:
 # The loop continues until i * i >= n. This happens when i = √n. Hence, the number of iterations is O(√n).
 
 # Question 5: What is the time complexity of the following code?
+# n = 9, x = 2
 def fun(n, x):
+    # range: (1 - 8)
+    # i = 1 -> GeeksforGeeks
+    # i = i*x = 1*2 = 2 , (1<9)-> GeeksforGeeks
+    # i = 2*2 = 4, (4<9) -> GeeksforGeeks
+    # i = 4*2 = 8 , (8<9)-> GeeksforGeeks
+    # i = 8*2 = 16 , (16<9)-> False, LOOP EXITS
     for i in range(1, n, i * x):
         print("GeeksforGeeks")
+
+# Mathematical Explanation:
+# i = 1 -> GeeksforGeeks
+# i=1, i = i*x = 1*x = 2
+# i=2, i = i*x = (i*x)*x = 4
+# i=4, i = ((i*x)*x)*x = 8
+
+# ------------
+# 1 + (1*x) + (1*x)*x + ((1*x)*x)*x + ..... + until the loop stops when (i >=n)
+
+# 1 + x + x^2 + x^3 + .... + x^k = n [Geometric series]
+# 1 + 2 + 4 + 8 + .... + x^k = n [Geometric series]
+
+# Formula for the Geometric series:
+# 1. When (r < 1) => a(1 - r^n) / (1 - r)
+# 2. When (r > 1) => a(r^n - 1) / (r - 1) [** IN OUR CASE, THIS ONE MATCHES] => S = a(r^n - 1) / (r - 1)
+
+# 1((1*x)^k-1)/((1*x)-1) = n
+# (x^k+1 - 1)/(x-1) = n
+# x^k+1 - 1 = n*(x-1)
+# x^k+1 = n(x-1)
+# k+1 = log_x ^(n(x-1))
+# k = O(log_x n) # Time complexity
+
+# where a = first term, r = common ratio (second term / first term), n = number of terms
+# where a = 1, r = 2/1 = 2 > 1, n = k
 
 # Answer: Time complexity = O(log_x n).
 # Explanation:
