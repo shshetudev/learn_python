@@ -1,3 +1,4 @@
+# Approach: Two pass search
 # Time complexity = O(n)
 def getSecondLargest(arr):
     n = len(arr)
