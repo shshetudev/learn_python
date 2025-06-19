@@ -17,4 +17,5 @@
 | 20-05-2025 | https://www.geeksforgeeks.org/move-zeroes-end-array/                                                   | Problem solving: Naive->Better->Best(GFG)                              | DONE   |
 | 14-06-2025 | https://www.geeksforgeeks.org/dsa/rearrange-array-maximum-minimum-form/                                | GFG                                                                    | DONE   |
 | 14-06-2025 | https://www.geeksforgeeks.org/dsa/program-for-array-rotation-continued-reversal-algorithm/             | GFG                                                                    | DONE   |
-| 15-06-2025 | https://www.geeksforgeeks.org/dsa/print-left-rotation-array/                                           | GFG                                                                    | TODO   |
+| 15-06-2025 | https://www.geeksforgeeks.org/dsa/print-left-rotation-array/                                           | GFG                                                                    | DONE   |
+| 19-06-2025 | https://www.geeksforgeeks.org/dsa/find-number-of-triangles-possible/ , Input: [4, 6, 3, 7,6, 9, 8]     | GFG                                                                    | TODO   |
